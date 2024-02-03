@@ -7,6 +7,7 @@ import re
 import os
 from sceptre.template_handlers.file import File
 
+
 class FormattedYaml(File):
     """
     Template handler that can load files from disk.
