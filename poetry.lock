@@ -970,6 +970,23 @@ docs = ["pygments-github-lexers (>=0.0.5)", "sphinx (>=2.0.0)", "sphinxcontrib-a
 testing = ["flaky (>=3.4.0)", "freezegun (>=0.3.11)", "pathlib2 (>=2.3.3)", "psutil (>=5.6.1)", "pytest (>=4.0.0)", "pytest-cov (>=2.5.1)", "pytest-mock (>=1.10.0)", "pytest-randomly (>=1.0.0)"]
 
 [[package]]
+name = "tox-gh-matrix"
+version = "0.2.0"
+description = "Generate a GitHub workflow build matrix from the tox.ini envlist"
+optional = false
+python-versions = ">=3.6"
+files = [
+    {file = "tox-gh-matrix-0.2.0.tar.gz", hash = "sha256:44ca327a4f74ec4085882571d5c46ec2dcd9ff76d38905416e58d1c1b8ffa1f1"},
+    {file = "tox_gh_matrix-0.2.0-py3-none-any.whl", hash = "sha256:122115d21bdc1fca1ae95eb729d19051d1886a429808b0da844bb26540761f32"},
+]
+
+[package.dependencies]
+tox = ">=3.15.2,<4"
+
+[package.extras]
+testing = ["pytest (>=6.2.0)", "pytest-cov (>=3.0.0)", "pytest-mock (>=3.6.0)", "pytest-xdist (>=2.3.0)"]
+
+[[package]]
 name = "urllib3"
 version = "1.26.18"
 description = "HTTP library with thread-safe connection pooling, file post, and more."
@@ -1025,4 +1042,4 @@ test = ["covdefaults (>=2.3)", "coverage (>=7.2.7)", "coverage-enable-subprocess
 [metadata]
 lock-version = "2.0"
 python-versions = ">=3.8,<=3.12"
-content-hash = "2a59e66c2998b95e84f66b24e0e8a34fa7415072b2d3ea6951d0ec34f30592b3"
+content-hash = "bebdb71cc4743a45e4a5510d6b0abfc3d22faf8da8dd14665aa2c3caf5ec1e7d"
