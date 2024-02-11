@@ -1,3 +1,6 @@
+[project]
+name = "sceptre-formatted-yaml-handler"
+
 [tool.poetry]
 name = "sceptre-formatted-yaml-handler"
 version = "1.0.0"
