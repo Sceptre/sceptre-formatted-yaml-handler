@@ -1,10 +1,10 @@
 [tool.poetry]
-name = "sceptre-template-handler-formatted-yaml"
+name = "sceptre-formatted-yaml-handler"
 version = "1.0.0"
 packages = [{ include = "template_handler" }]
 readme = "README.md"
-homepage = "https://github.com/Sceptre/sceptre-template-handler-formatted-yaml"
-repository = "https://github.com/Sceptre/sceptre-template-handler-formatted-yaml"
+homepage = "https://github.com/Sceptre/sceptre-formatted-yaml-handler"
+repository = "https://github.com/Sceptre/sceptre-formatted-yaml-handler"
 authors = ["Mitchell Rowling <57084321+mrowlingfox@users.noreply.github.com>"]
 description = "A Sceptre template handler for opinionated formatted YAML"
 keywords = ["sceptre", "sceptre-handler"]
@@ -25,7 +25,7 @@ classifiers = [
 "formatted_yaml" = "template_handlers.formatted_yaml:FormattedYaml"
 
 [tool.poetry.dependencies]
-python = ">=3.8,<=3.12"
+python = "^3.8"
 
 [tool.poetry.group.dev.dependencies]
 pre-commit = "^3.2.1"
