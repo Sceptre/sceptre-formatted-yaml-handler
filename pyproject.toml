@@ -1,14 +1,18 @@
+[project]
+name = "sceptre-formatted-yaml-handler"
+
 [tool.poetry]
-name = "sceptre-template-handler-template"
-version = "0.0.1"
+name = "sceptre-formatted-yaml-handler"
+version = "1.0.0"
 packages = [{ include = "template_handler" }]
 readme = "README.md"
-homepage = "https://github.com/Sceptre/sceptre-template-handler-template"
-repository = "https://github.com/Sceptre/sceptre-template-handler-template"
-authors = ["Sceptre <sceptreorg@gmail.com>"]
-description = "A Github template for Sceptre template handlers"
+homepage = "https://github.com/Sceptre/sceptre-formatted-yaml-handler"
+repository = "https://github.com/Sceptre/sceptre-formatted-yaml-handler"
+authors = ["Mitchell Rowling <57084321+mrowlingfox@users.noreply.github.com>"]
+description = "A Sceptre template handler for opinionated formatted YAML"
 keywords = ["sceptre", "sceptre-handler"]
 license = "Apache-2.0"
+
 classifiers = [
   "Intended Audience :: Developers",
   "Natural Language :: English",
@@ -21,7 +25,7 @@ classifiers = [
 ]
 
 [tool.poetry.plugins."sceptre.template_handlers"]
-"custom" = "template_handler.custom:Custom"
+"formatted_yaml" = "template_handler.formatted_yaml:FormattedYaml"
 
 [tool.poetry.dependencies]
 python = "^3.8"
@@ -29,9 +33,9 @@ python = "^3.8"
 [tool.poetry.group.dev.dependencies]
 pre-commit = "^3.2.1"
 tox = "^3.23.0"
-pytest = "^7.4.3"
+pytest = "^7.2.2"
 pytest-cov = "^4.0.0"
-sceptre = "^4.0"
+sceptre = ">3.2"
 tox-gh-matrix = "^0.2"
 
 [build-system]
