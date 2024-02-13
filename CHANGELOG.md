@@ -15,3 +15,9 @@ Categories: Added, Removed, Changed, Fixed, Nonfunctional, Deprecated
 - Initial template handler code
 
 -->
+
+## 1.0.0 (2024.02.14)
+
+### Added
+
+- Initial template handler code
