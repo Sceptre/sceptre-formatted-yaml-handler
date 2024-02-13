@@ -25,7 +25,7 @@ classifiers = [
 ]
 
 [tool.poetry.plugins."sceptre.template_handlers"]
-"formatted_yaml" = "template_handlers.formatted_yaml:FormattedYaml"
+"formatted_yaml" = "template_handler.formatted_yaml:FormattedYaml"
 
 [tool.poetry.dependencies]
 python = "^3.8"
